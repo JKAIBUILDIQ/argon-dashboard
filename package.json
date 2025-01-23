@@ -1,8 +1,8 @@
 {
-  "name": "argon-dashboard-pro",
+  "name": "argon-dashboard",
   "version": "2.1.0",
-  "description": "Premium Dashboard for Bootstrap 5",
-  "main": "dashboards/default.html",
+  "description": "Freebie Dashboard for Bootstrap 5",
+  "main": "pages/dashboard.html",
   "type": "module",
   "directories": {
     "example": "root"
@@ -11,34 +11,37 @@
     "open-app": "gulp open-app",
     "start": "npm run open-app",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-scss": "sass --style expanded --source-map --precision=6 assets/scss/argon-dashboard.scss assets/css/argon-dashboard.css --quiet",
-    "watch": "npm run compile:scss -- --watch"
+    "watch": "gulp-watch",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/argon-dashboard.git"
   },
   "keywords": [
-    "argon dashboard pro",
+    "argon dashboard",
     "bootstrap 5",
     "dashboard",
-    "admin dashboard",
     "creative tim",
     "html dashboard",
     "html css dashboard",
     "web dashboard",
-    "premium",
-    "premium bootstrap admin dashboard",
-    "css3 kit",
+    "freebie",
+    "free bootstrap dashboard",
+    "css3 dashboard",
     "bootstrap dashboard",
     "frontend",
-    "responsive bootstrap admin dashboard"
+    "responsive bootstrap dashboard"
   ],
   "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
-  "license": "Premium",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/ct-argon-dashboard-pro/issues"
+    "url": "https://github.com/creativetimofficial/argon-dashboard/issues"
   },
   "devDependencies": {
-    "gulp": "5.0.0",
-    "gulp-open": "3.0.1",
+    "gulp": "^5.0.0",
+    "gulp-open": "^3.0.1",
     "sass": "1.80.2"
   },
-  "homepage": "https://creative-tim.com/product/material-dashboard-pro"
+  "homepage": "http://creative-tim.com/product/argon-dashboard"
 }
